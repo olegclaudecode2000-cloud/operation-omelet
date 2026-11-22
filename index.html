@@ -1,56 +1,55 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Шуточный сбор на вымышленную операцию Паши.">
-<title>Операция «Восстановление»</title>
-<link rel="stylesheet" href="style.css">
-<script src="site.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Операция «Восстановление». Паша, держись.">
+  <meta name="theme-color" content="#141715">
+  <title>Паша, держись. Операция «Восстановление»</title>
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-<header class="wrap mast">
-  <a href="./" class="brand"><i class="mark" aria-hidden="true">+</i> Операция «Восстановление»</a>
-  <a href="#album">Фотоальбом</a>
-</header>
-<main class="wrap">
-  <section class="hero" aria-labelledby="title">
-    <div class="intro">
-      <p class="label">Шуточный сбор</p>
-      <h1 id="title">Паша,<br>держись.</h1>
-      <p class="lede">Сбор на операцию по восстановлению яиц</p>
-      <p>Бедняга Паша просто встал со скамейки. Секунда спустя его жизнь превратилась в драму с рабочим названием «Операция “Восстановление”».</p>
-      <div class="fund">
-        <div class="tally"><strong>69 ₽</strong><span>Сбор открыт</span></div>
-        <p class="fund-note">Собрано понарошку. Операция выдумана, платежей нет.</p>
+  <header class="wrap mast">
+    <a href="./" class="brand"><b aria-hidden="true">✚</b> Операция «Восстановление»</a>
+    <nav aria-label="Разделы"><a href="#scene">Видео</a><a href="#album">Фото</a></nav>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div class="intro">
+        <h1 id="title">Паша,<br>держись.</h1>
+        <p class="lede">На операцию по восстановлению яиц</p>
+        <p class="story">Бедняга Паша просто встал со скамейки. С тех пор он предпочитает переживать даже хорошие новости сидя.</p>
+        <div class="fund">
+          <div><span class="caption">Собрано</span><strong>69 ₽</strong></div>
+          <span class="badge"><i aria-hidden="true"></i>Сбор открыт</span>
+        </div>
       </div>
-    </div>
-    <figure class="portrait">
-      <img src="assets/bench.jpg" width="1920" height="2560" alt="Паша улыбается на скамейке и показывает большой палец">
-      <figcaption>Паша держится. Даже показывает большой палец.</figcaption>
-    </figure>
-  </section>
-  <section class="scene-section" aria-labelledby="scene-title">
-    <h2 id="scene-title">Та самая секунда</h2>
-    <div class="scene" id="scene" aria-hidden="true">
-      <span class="bench"></span>
-      <span class="actor"><span></span></span>
-      <span class="impact">БАМ!</span>
-    </div>
-    <button id="replay" type="button">Смотреть сцену</button>
-    <p id="scene-status" role="status"></p>
-  </section>
-  <section id="album" aria-labelledby="album-title">
-    <h2 id="album-title">Как Паша это пережил</h2>
-    <div class="album">
-      <figure><img src="assets/yawn.jpg" width="2560" height="1920" loading="lazy" alt="Паша зевает"><figcaption>Драматическая реакция.</figcaption></figure>
-      <figure><img src="assets/locker.jpg" width="1920" height="2560" loading="lazy" alt="Паша сидит рядом с хоккейной экипировкой"><figcaption>Собирается с духом.</figcaption></figure>
-      <figure><img src="assets/tea.jpg" width="1920" height="2560" loading="lazy" alt="Паша за стаканом с ложкой"><figcaption>Обдумывает следующий шаг.</figcaption></figure>
-    </div>
-  </section>
-</main>
-<footer class="wrap">Операция «Восстановление» · История выдумана</footer>
+      <figure class="portrait">
+        <img src="assets/bench.jpg" width="1920" height="2560" alt="Паша улыбается на скамейке и показывает большой палец">
+        <figcaption>Последнее беззаботное «всё норм».</figcaption>
+      </figure>
+    </section>
+    <section class="section" id="scene" aria-labelledby="scene-title">
+      <div class="section-head">
+        <h2 id="scene-title">Та самая секунда</h2>
+        <p>Паша встаёт. Дальше всё видно по лицу.</p>
+      </div>
+      <video controls playsinline preload="metadata" poster="assets/scene-poster.jpg" aria-label="Короткая сцена с Пашей на скамейке">
+        <source src="assets/scene.mp4" type="video/mp4">
+        <a href="assets/scene.mp4">Открыть видео</a>
+      </video>
+      <a class="video-link" href="assets/scene.mp4">Открыть видео отдельно</a>
+    </section>
+    <section class="section" id="album" aria-labelledby="album-title">
+      <div class="section-head"><h2 id="album-title">После скамейки</h2></div>
+      <div class="album">
+        <figure><a href="assets/yawn.jpg"><img src="assets/yawn.jpg" width="2560" height="1920" loading="lazy" alt="Паша зевает"></a><figcaption>Первая реакция.</figcaption></figure>
+        <figure><a href="assets/locker.jpg"><img src="assets/locker.jpg" width="1920" height="2560" loading="lazy" alt="Паша рядом с хоккейной экипировкой"></a><figcaption>В поисках защиты.</figcaption></figure>
+        <figure><a href="assets/tea.jpg"><img src="assets/tea.jpg" width="1920" height="2560" loading="lazy" alt="Паша за стаканом с ложкой"></a><figcaption>Тяжёлые раздумья.</figcaption></figure>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">Операция «Восстановление» <span>Платежи на сайте не принимаются</span></footer>
 </body>
 </html>
-
