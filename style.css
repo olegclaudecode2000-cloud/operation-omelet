@@ -1,0 +1,32 @@
+:root{color-scheme:light;--ink:#211b31;--muted:#61596c;--paper:#faf8ff;--rule:#ded8e8;--purple:#432773;--yolk:#ffcf56}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.55 "Segoe UI",sans-serif}
+.wrap{width:min(1120px,calc(100% - 3rem));margin-inline:auto}
+.mast{display:flex;justify-content:space-between;align-items:center;padding-block:1.1rem;border-bottom:1px solid var(--rule);gap:1rem}
+a{color:var(--purple);text-underline-offset:.25em}.brand{display:flex;align-items:center;gap:.55rem;font-weight:750;text-decoration:none}
+.egg,.tray i{display:inline-block;width:1rem;height:1.3rem;border-radius:51% 51% 46% 46% / 64% 64% 38% 38%;background:var(--yolk);transform:rotate(-15deg)}
+.hero{display:grid;grid-template-columns:1fr .9fr;gap:clamp(2rem,6vw,6rem);align-items:center;padding-block:clamp(2.5rem,7vw,6rem)}
+.intro{animation:arrive .65s ease-out both}.label{color:var(--purple);font-weight:650;margin:0 0 .65rem}
+h1,h2{letter-spacing:-.065em;line-height:1;margin:0;font-weight:850}
+h1{font-size:clamp(3.15rem,7vw,7.1rem)}h2{font-size:clamp(2rem,4.5vw,4rem)}
+.lede{font-size:clamp(1.15rem,2vw,1.5rem);font-weight:700;margin-block:1.2rem .4rem}
+.intro>p:not(.label):not(.lede){margin-block:.5rem 1.5rem;max-width:47ch}
+.fund{padding-top:1rem;border-top:1px solid var(--rule)}
+.tally{display:flex;align-items:baseline;justify-content:space-between;gap:.25rem 1rem;flex-wrap:wrap}.tally span,#status,figcaption,footer{color:var(--muted);font-size:.9rem}
+.tray{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:.35rem;margin-block:.85rem 1.1rem}
+.tray i{width:100%;max-width:1.65rem;height:auto;aspect-ratio:3/4;transform:none;background:#e8e0f1}.tray .filled{background:var(--yolk)}.tray .fresh{animation:pop .4s ease-out}
+button{background:var(--purple);color:white;border:0;border-radius:2rem;padding:.7rem 1.15rem;font:inherit;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:1rem;min-height:44px}
+button:hover{background:#583991}button:active{transform:scale(.98)}button:disabled{opacity:.75;cursor:default}button:focus-visible,a:focus-visible{outline:3px solid #7750b5;outline-offset:4px}
+#status{margin:.65rem 0 0}
+figure{margin:0}img{display:block;width:100%;height:auto;object-fit:cover;background:#e8e0f1}
+.portrait img{aspect-ratio:4/5;object-position:center 48%;border-radius:46% 46% .8rem .8rem / 30% 30% .8rem .8rem;animation:arrive .8s .1s ease-out both}
+figcaption{margin-top:.65rem}
+#album{border-top:1px solid var(--rule);padding-block:clamp(2rem,5vw,4rem);scroll-margin-top:1rem}
+.album{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.5rem}
+.album img{aspect-ratio:1;border-radius:.6rem}.album figure:nth-child(2) img{object-position:center 65%}
+footer{padding-block:1.25rem;border-top:1px solid var(--rule)}
+@keyframes arrive{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pop{45%{transform:translateY(-7px) rotate(-14deg) scale(1.15)}}
+@media(max-width:710px){.wrap{width:calc(100% - 2rem)}.hero{grid-template-columns:1fr}.portrait{max-width:430px}.album{grid-template-columns:1fr 1fr}.album figure:first-child{grid-column:1/-1}.album figure:first-child img{aspect-ratio:4/3}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
